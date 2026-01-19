@@ -219,3 +219,65 @@ header nav ul {
   line-height: 1.5;
   opacity: 0.7;
 }
+
+.featured {
+  padding: 120px 0;
+}
+
+.featured h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.feature-card iframe {
+  width: 100%;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+.feature-content h3 {
+  font-size: 24px;
+}
+
+.feature-content p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.feature-time {
+  display: flex;
+  gap: 5px;
+  color: #00ff88;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.feature-time img {
+  object-fit: contain;
+}
+
+.feature-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
