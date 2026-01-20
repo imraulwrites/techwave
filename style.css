@@ -63,24 +63,38 @@ header nav ul {
   border: 1px solid #412567;
 }
 
-#hero-image {
-  width: 100%;
-  background-image:
-    url(./assets/microphone.png), url(./assets/hero-circle.png), url(./assets/hero-bg.png);
-  background-repeat: no-repeat;
-  background-position:
-    50% 30%,
-    50% 20%,
-    0% 40%;
-
-  background-size:
-    auto,
-    410px 410px,
-    cover;
-  min-height: 760px;
-
-  /* border: 1px solid white; */
+.hero {
   position: relative;
+  width: 100%;
+  background-image: url(./assets/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-container {
+  position: absolute;
+  top: 10%;
+}
+
+.hero-image {
+  background-image: url('./assets/hero-circle.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 350px;
+  min-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  object-fit: contain;
 }
 
 .hero-content {
@@ -88,9 +102,9 @@ header nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute;
   top: 70%;
-  left: 37%;
+  left: 37%; */
 }
 
 .hero-content h1 {
